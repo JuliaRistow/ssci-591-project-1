@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia Ristow | Yosemite Photo Locations | SSCI 591 | Project 1</title>
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Yosemite National Park Photo Locations</h1>
+        
+        <p>Julia Ristow &mdash; SSCI 591 &mdash; Web &amp; Mobile GIS &mdash; Fall 2026</p>
+    </header>
+    
+    <main>
+        <h2>ABOUT THIS PAGE</h2>
+        <p>This page showcases some of my favorite photos I've taken in Yosemite National Park. 
+            It also features a map with buttons to navigate to each of the locations of where 
+            I took these photos. </p>
+        <p>Use this page to plan your own visit to the park! </p>
+        <img class="portrait" src="./images/photo.jpg" alt="A photo of Julia" width="260">
+        <h2>ABOUT ME</h2>
+        
+        <p>My name is Julia, and I'm a graduate student studying GIST in the Spatial Sciences 
+            Institute at USC. 
+            I made this page as part of my Web & Mobile GIS class to comnbine my interests of 
+            photography, traveling, and GIS. I hope you enjoy it!</p>
+
+        <h2>YOSEMITE PHOTOS</h2>
+        <div class="photo-gallery">
+            <div class="photo-item">
+               <h3>Tunnel View</h3>
+                <img class="photo" src="./images/tunnelview.jpg" alt="Tunnel View" width="700">
+                <p>Tunnel view offers a stunning perspective of the valley and surrounding peaks. This photo captures El Capitan, Half Dome, and Bridalveil Fall.</p>
+            </div>
+            <div class="photo-item">
+                <h3>Cook's Meadow</h3>
+                <img class="photo" src="./images/cooksmeadow.jpg" alt="Cook's Meadow" width="700">
+                <p>Cook's Meadow is a beautiful area with great views of Half Dome, featured in this photo.</p>
+            </div>
+            <div class="photo-item">
+                <h3>Lower Yosemite Fall Vista Point</h3>
+                <img class="photo" src="./images/loweryosemitefall.jpg" alt="Lower Yosemite Fall Vista Point" width="700">
+                <p>Lower Yosemite Fall Vista Point provides a close-up view of the powerful cascade of water tumbling down the granite cliffs.</p>
+            </div>
+        <h2>MAP</h2>
+        <div id="map"></div>
+
+        <p>
+            <button id="tunnelview-button">Tunnel View</button>
+            <button id="cooksmeadow-button">Cook's Meadow</button>
+            <button id="loweryosemitefall-button">Lower Yosemite Fall Vista Point</button>
+            <button id="reset-button">Reset Map</button>
+        </p>
+
+        <p id="status">Click a button to visit the site of each photo.</p>
+    </main>
+
+    <footer>
+        <p>Built on 15 September 2026.</p>
+    </footer>
+
+
+<script src="./apps.js"></script>
+
+</body>
+</html>
