@@ -49,10 +49,21 @@ h3 {
   margin: 0px 30px 30px 30px;
 }
 
-.photo {
- 
+.photo-landscape {
+  display: block;           /* makes the image a block element */
+  margin: auto;           /* centers the image horizontally */
+  margin-bottom: 24px;     /* adds space below the image */
+  width: 100%;
   border: 4px solid #ffffff;
-  
+}
+
+.photo-portrait {
+  display: block;           /* makes the image a block element */
+  margin: auto;           /* centers the image horizontally */
+  margin-bottom: 24px;     /* adds space below the image */
+  width: 66.67%;         /* sets width to 66.67% so it is the same size as the landscape images 
+                        (all are 2x3 images but landscape are horizontal and portrait are vertical) */
+  border: 4px solid #ffffff;
 }
 
 footer {
@@ -69,6 +80,19 @@ footer {
     border-radius: 12px;
     border: 15px solid #ffffff;
     margin-top: 12px;
+}
+
+.container { /* Styles for the description button containers */
+    display: flex; /* Enables CSS flexbox */
+    justify-content: center; /* Centers horizontally */
+}
+
+.description { /* Styles for the description text */
+    padding: 0 50px; /* Adds some padding around the description */
+    margin-top: 12px; /* Adds some space above the description */
+    font-size: 1rem; /* Adjusts the font size */
+    color: #10104f; /* Sets the text color */
+    border-bottom: 1px solid #526ea4;
 }
 
 button {
