@@ -35,7 +35,7 @@ cooksmeadowButton.addEventListener("click", function() {
 
 loweryosemitefallButton.addEventListener("click", function() {
     map.flyTo(loweryosemitefall, 18);
-    statusText.textContent = "You are now at Lower Yosemite Fall Vista Point.";
+    statusText.textContent = "You are now at Lower Yosemite Falls Vista Point.";
 });
 
 resetButton.addEventListener("click", function() {
@@ -58,7 +58,7 @@ function showDescription2() {
 document.getElementById("cooksmeadowdescription-button").addEventListener("click", showDescription2);
 
 function showDescription3() {
-    let description3 = "Lower Yosemite Fall Vista Point provides a close-up view of the waterfall tumbling down the granite cliffs. This is a great spot to get a photo of yourself with Lower Yosemite Fall in the background.";
+    let description3 = "Lower Yosemite Falls Vista Point provides a close-up view of the waterfall tumbling down the granite cliffs. This is a great spot to get a photo of yourself with the waterfall in the background.";
     document.getElementById("Description3").textContent = description3;
 }
 
